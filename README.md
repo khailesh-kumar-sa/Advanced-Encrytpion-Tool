@@ -6,9 +6,9 @@
 **DURATION**: 8 WEEKS
 **MENTOR**: NEELA SANTHOSH
 
-**Task 1**: File Integrity Checker
-For this task, I built a tool in Python to monitor changes in files by calculating and comparing their hash values. I chose Python because of its simplicity and powerful libraries like hashlib that can easily generate cryptographic hashes such as SHA-256.
+**Task 4**: Advanced AES-256 Encryption Tool
+To fulfill the encryption task, I created a Python tool that robustly encrypts and decrypts files using the AES-256 algorithm in CBC mode with proper padding and a random initialization vector (IV). I used the pycryptodome library and corrected import statements to Crypto namespace ensuring compatibility.
 
-I wrote a script that calculates hash values of files within a folder, saves these hash values as a baseline in a JSON file, and later compares new hash values to detect any unauthorized modifications, added or missing files. The script logs clear messages when changes are detected. This project involved understanding hashing, file handling, and comparing stored data with new data.
+Password-based key derivation using SHA-256 hashes the user’s password into a secure 256-bit key. Encrypted files store the IV concatenated with ciphertext for straightforward decryption. The tool features a clear, console-based user interface guiding users through encrypting or decrypting files securely.
 
-To run it, I prompt the user either to create a baseline or to check the integrity of files, making it flexible and user-friendly. This gave me practical experience in cybersecurity principles by automating file tampering detection.
+This project challenged me to implement strong cryptographic practices and develop a tool that balances security and usability—a key skill in data protection and cybersecurity applications.
